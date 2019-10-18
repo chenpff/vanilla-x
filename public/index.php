@@ -1,4 +1,8 @@
 <?php
+
+date_default_timezone_set('Asia/Shanghai');
+define('BEGIN_TIME', sprintf('%.3F', microtime(TRUE)));
+
 require __DIR__ . '/../vendor/autoload.php';
 
 try {
@@ -8,6 +12,7 @@ try {
     echo json_encode(['msg' => 'network fail, try again later!', 'code' => 99999]);
     exit;
 }
+
 $app = new \Vanilla\Application(dirname(__DIR__));
 $app->process(new \Vanilla\Process\Http($app));
 $app->run();
