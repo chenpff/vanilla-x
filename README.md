@@ -3,7 +3,7 @@
 ## Installation
 It's recommended that you use [Composer](https://getcomposer.org/) to install Vanilla.
 ```bash
-$ composer create-project vanduke/vanilla blog
+$ composer create-project vanduke/vanilla-x blog
 ```
 This will install Vanilla and all required dependencies. Vanilla requires PHP 7.1.3 or newer.
 
