@@ -2,3 +2,5 @@
 .idea/*
 .travis.yml
 logs/*
+vendor
+composer.lock
